@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/transactions.css' %}">
+</head>
+<body>
+    <center><h1>Transaction List</h1></center>
+    <table class="transactions" style="table-layout: fixed;">
+        <thead>
+            <tr class="transaction-heading">
+                <th style="width: 100px;">Namespace ID</th>
+                
+                <th style="width: 100px;">Height</th>
+                <th style="width: 100px;">TxHash</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr class="transaction">
+                    <td style="word-break: break-all;">{{ transaction.namespace_id }}</td>
+                    
+                    <td style="word-break: break-all;">{{ transaction.height }}</td>
+                    <td style="word-break: break-all;">{{ transaction.txhash }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+

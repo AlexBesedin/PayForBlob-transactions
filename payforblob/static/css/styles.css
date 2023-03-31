@@ -1,0 +1,112 @@
+.container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: white;
+  }
+  
+  .form-box {
+    width: 80px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #7b2bf9;
+    color: white;
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-box form label {
+    margin-bottom: 10px;
+  }
+  
+  .form-box form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .form-box form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #7b2bf9;
+    cursor: pointer;
+  }
+  
+  .form-box form button:hover {
+    background-color: #7b2bf9;
+    color: white;
+  }
+
+
+  .form-container {
+    background-color: #7b2bf9;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 200px;
+    margin: 0 auto;
+    background-color: #7b2bf9;
+    border-radius: 10px;
+    padding: 70px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  form button[type="submit"] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .form-container form p:not(:last-child) {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+
+    
+  
+  
+  
