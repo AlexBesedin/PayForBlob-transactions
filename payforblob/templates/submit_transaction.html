@@ -6,6 +6,7 @@
   
   <div class="form-container mx-auto">
     <center><img src="{% static 'artboard15x.png' %}" alt="Logo"><h2></h2>
+      
     <form class="my-form" method="post">
       {% csrf_token %}
       {{ form.as_p }}

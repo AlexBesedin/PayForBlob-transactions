@@ -26,7 +26,9 @@
                     <td style="word-break: break-all;">{{ transaction.namespace_id }}</td>
                     
                     <td style="word-break: break-all;">{{ transaction.height }}</td>
-                    <td style="word-break: break-all;">{{ transaction.txhash }}</td>
+                    <td style="word-break: break-all;">
+                        <a href="https://testnet.mintscan.io/celestia-incentivized-testnet/txs/{{ transaction.txhash }}" target="_blank">{{ transaction.txhash }}</a>
+                      </td>
                 </tr>
             {% endfor %}
         </tbody>

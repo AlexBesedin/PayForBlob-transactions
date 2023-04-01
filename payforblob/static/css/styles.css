@@ -11,6 +11,7 @@
   background-color: #7b2bf9;
   border-radius: 10px;
   padding: 20px;
+  transition: transform 0.5s ease;
 }
 
 .form-control {
@@ -28,7 +29,7 @@ form {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 80px;
+  padding: 190px;
   font-family: Arial, sans-serif;
 }
 
@@ -69,6 +70,7 @@ form button[type="submit"] {
 
 .my-form {
   background-color: #7b2bf9;
+  background-image: linear-gradient(to top, #e74fec9c(310 7% 18%), #7b2bf9);
   padding: 10px;
   border: 0px solid #DDDDDD;
   border-radius: 5px;
@@ -90,4 +92,43 @@ form button[type="submit"] {
 header {
   background-image: linear-gradient(to top, #e28ed4, #7b2bf9);
   /* остальные стили */
+}
+
+
+.header-link {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, font-size 0.3s;
+}
+
+.header-link:hover {
+    background-color: #5d0b9c;
+    font-size: 22px;
+}
+
+
+.logo {
+  float: left;
+  margin-right: 20px;
+  transition: transform 0.5s ease;
+}
+
+.logo:hover {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+header img {
+  height: 60px; /* установите высоту логотипа по вашему выбору */
 }
