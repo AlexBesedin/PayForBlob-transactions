@@ -8,8 +8,8 @@
 
 .transactions {
   border-collapse: collapse;
+  margin: 100px auto 0 auto; /* добавили отступ сверху и центрирование по горизонтали */
   width: 80%;
-  margin: auto;
 }
 
 .transaction-heading th {
@@ -31,8 +31,3 @@
 .transaction:hover {
   background-color: #ddd;
 }
-
-  
-  
-  
-  

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/transactions.css' %}">
 </head>
 <body>
+    {% include 'header.html' %}
     <div id="header">
         <h1>{% block heading %}{% endblock %}</h1>
         {% block nav %}
@@ -23,4 +24,3 @@
     </div>
 </body>
 </html>
-

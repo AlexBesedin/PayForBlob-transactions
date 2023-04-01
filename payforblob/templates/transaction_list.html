@@ -1,4 +1,6 @@
+{% include 'header.html' %}
 {% load static %}
+
 
 <!DOCTYPE html>
 <html>
@@ -8,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/transactions.css' %}">
 </head>
 <body>
-
     <center><h1>Transaction List</h1></center>
     <table class="transactions" style="table-layout: fixed;">
         <thead>
@@ -16,7 +17,7 @@
                 <th style="width: 50px;">Namespace ID</th>
                 
                 <th style="width: 50px;">Height</th>
-                <th style="width: 100px;">TxHash</th>
+                <th style="width: 110px;">TxHash</th>
             </tr>
         </thead>
         <tbody>
@@ -32,10 +33,3 @@
     </table>
 </body>
 </html>
-
-
-
-
-
-
-
