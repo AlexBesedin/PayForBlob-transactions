@@ -45,7 +45,7 @@ def submit_transaction(request):
     return render(request, 'submit_transaction.html', {'form': form})
 
 def transaction_list(request):
-    transactions = Transaction.objects.all().order_by('id')
+    transactions = Transaction.objects.all().order_by('-height')
     return render(request, 'transaction_list.html', {'transactions': transactions})
 
 
