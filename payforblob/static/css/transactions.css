@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
   background-color: white;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .transaction td, .transaction th {
-  border: 1px solid #ddd;
+  border: 5px solid #ddd;
   padding: 8px;
   text-align: center;
 }

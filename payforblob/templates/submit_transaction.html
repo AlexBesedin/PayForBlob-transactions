@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 <div class="container">
   <div class="form-container mx-auto">
-    <center><h2>Transaction</h2>
+    <center><img src="{% static 'artboard15x.png' %}" alt="Logo"><h2></h2>
     <form method="post">
       {% csrf_token %}
       {{ form.as_p }}
