@@ -1,8 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
+from django.http import JsonResponse
+
 from .forms import TransactionForm
 from .models import Transaction
 import requests
+
 import json
 
 
@@ -50,6 +53,5 @@ def transaction_list(request):
     return render(request, 'transaction_list.html', {'transactions': transactions})
 
 
-def namespaced(request):
-    # ваш код представления здесь
-    return render(request, 'namespaced.html')
+def about(request):
+    return render(request, 'about.html')
