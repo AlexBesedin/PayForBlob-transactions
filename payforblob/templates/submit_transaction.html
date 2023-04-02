@@ -3,16 +3,26 @@
 
 {% block content %}
 <div class="container">
-  
   <div class="form-container mx-auto">
     <center><img src="{% static 'artboard15x.png' %}" alt="Logo"><h2></h2>
-      
     <form class="my-form" method="post">
       {% csrf_token %}
       {{ form.as_p }}
-      <button type="submit">Submit</button>
+      <button type="submit" id="submit-button">Submit</button>
+<div id="loading-spinner"></div>
     </form>
     </center>
+    <div class="instructions-container mx-auto">
+      <details>
+        <summary>How to use ?</summary>
+        <p>You can generate your own namespace_id <br>
+          and data values using this useful Golang <br>
+          Playground we created <a href='https://go.dev/play/p/7ltvaj8lhRl'>here</a><br>
+          gas_limit: 80000, fee: 2000</p>
+      </details>
+    </div>
   </div>
+
+  
 </div>
 {% endblock %}

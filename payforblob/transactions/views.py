@@ -5,6 +5,7 @@ from .models import Transaction
 import requests
 import json
 
+
 import requests
 import json
 from django.shortcuts import render, redirect  # Изменено импортирование redirect
@@ -49,4 +50,6 @@ def transaction_list(request):
     return render(request, 'transaction_list.html', {'transactions': transactions})
 
 
-
+def namespaced(request):
+    # ваш код представления здесь
+    return render(request, 'namespaced.html')
