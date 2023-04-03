@@ -5,7 +5,7 @@
     <img src="{% static 'logo.png' %}" alt="Logo" class="logo" class="header-link" style="float: left; margin-right: 20px;">
     <a href="{% url 'submit_transaction' %}" class="header-link">[Submit]</a>
     <a href="{% url 'transaction_list' %}" class="header-link">[PFB//transaction]</a>
-    <a href="#" class="header-link">[How to use]</a>
+    <a href="{% url 'how_to_use' %}" class="header-link">[How to use]</a>
     <a href="{% url 'about' %}" class="header-link">[About]</a>
   </div>
 </header>

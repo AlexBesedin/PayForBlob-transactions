@@ -53,5 +53,8 @@ def transaction_list(request):
     return render(request, 'transaction_list.html', {'transactions': transactions})
 
 
+def how_to_use(request):
+    return render(request, 'how_to_use.html')
+
 def about(request):
     return render(request, 'about.html')
