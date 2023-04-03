@@ -9,20 +9,12 @@
       {% csrf_token %}
       {{ form.as_p }}
       <button type="submit" id="submit-button">Submit</button>
-<div id="loading-spinner"></div>
+      <div id="loading-spinner"></div>
     </form>
     </center>
     <div class="instructions-container mx-auto">
-      <details>
-        <summary>How to use ?</summary>
-        <p>You can generate your own namespace_id <br>
-          and data values using this useful Golang <br>
-          Playground <a href='https://go.dev/play/p/7ltvaj8lhRl'>here</a><br><br>
-          gas_limit: 80000<br> fee: 2000</p>
-      </details>
+      {% include 'instructions.html' %}
     </div>
   </div>
-
-  
 </div>
 {% endblock %}
