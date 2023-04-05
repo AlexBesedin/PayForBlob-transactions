@@ -43,7 +43,7 @@ def submit_transaction(request):
             transaction.save()
 
             # Перенаправляем пользователя на страницу со списком транзакций
-            return redirect('transaction_list')  # Изменено перенаправление на именованный URL 'transaction_list'
+            return redirect('explorer')  # Изменено перенаправление на именованный URL 'transaction_list'
     else:
         form = TransactionForm()
     return render(request, 'submit_transaction.html', {'form': form})
