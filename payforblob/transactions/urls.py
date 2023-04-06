@@ -4,6 +4,6 @@ from . import views
 urlpatterns = [
     path('submit_pfb/', views.submit_transaction, name='submit_pfb'),
     path('explorer/', views.transaction_list, name='explorer'),
-    path('generated/', views.index, name='generated')
+    path('generated/', views.generated, name='generated')
 ]
 

@@ -54,7 +54,7 @@ def generate_hex_strings():
     msg = codecs.encode(os.urandom(lenMsg), 'hex').decode()
     return nID, msg
 
-def index(request):
+def generated(request):
     if request.method == 'POST':
         nID, msg = generate_hex_strings()
         return render(request, 'generated.html', {'nID': nID, 'msg': msg})
