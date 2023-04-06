@@ -1,20 +1,15 @@
+import requests
+import random
+import codecs
+import os
+import json
+
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
-
 from .forms import TransactionForm
 from .models import Transaction
-import requests
 
-import json
-
-
-import requests
-import json
-from django.shortcuts import render, redirect  # Изменено импортирование redirect
-
-from .forms import TransactionForm
-from .models import Transaction
 
 def submit_transaction(request):
     if request.method == 'POST':
@@ -43,7 +38,7 @@ def submit_transaction(request):
             transaction.save()
 
             # Перенаправляем пользователя на страницу со списком транзакций
-            return redirect('explorer')  # Изменено перенаправление на именованный URL 'transaction_list'
+            return redirect('explorer')  # Изменено перенаправление на именованный URL 'explorer'
     else:
         form = TransactionForm()
     return render(request, 'submit_transaction.html', {'form': form})
@@ -53,8 +48,16 @@ def transaction_list(request):
     return render(request, 'transaction_list.html', {'transactions': transactions})
 
 
-def how_to_use(request):
-    return render(request, 'how_to_use.html')
+def generate_hex_strings():
+    nID = codecs.encode(os.urandom(8), 'hex').decode()
+    lenMsg = random.randint(0, 100)
+    msg = codecs.encode(os.urandom(lenMsg), 'hex').decode()
+    return nID, msg
 
-def about(request):
-    return render(request, 'about.html')
+def index(request):
+    if request.method == 'POST':
+        nID, msg = generate_hex_strings()
+        return render(request, 'generated.html', {'nID': nID, 'msg': msg})
+    else:
+        return render(request, 'generated.html')
+    

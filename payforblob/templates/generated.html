@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}How to use{% endblock %}
+{% block content %}
+  <div>
+    <p>Click the button below to generate a random namespace ID and hex-encoded data:</p>
+    <form method="POST" class="corm">
+      {% csrf_token %}
+      <button type="submit" class="button">Generate</button>
+    </form>
+    {% if nID and msg %}
+      <div class="result">
+        <h2>Generated Hex Strings:</h2>
+        <p>My hex-encoded namespace ID: {{ nID }}</p>
+        <p>My hex-encoded message: {{ msg }}</p>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}
+
+
+
