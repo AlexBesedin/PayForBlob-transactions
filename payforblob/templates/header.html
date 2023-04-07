@@ -1,14 +1,9 @@
 {% load static %}
-
 <header style="background-color: #7b2bf9; box-shadow: 0 2px 4px rgba(0,0,0,0.2); position: fixed; top: 0; width: 100%;">
   <div style="display: flex; justify-content: center; align-items: center; height: 80px;">
     <img src="{% static 'logo.png' %}" alt="Logo" class="logo" class="header-link" style="float: left; margin-right: 20px;">
     <a href="{% url 'submit_pfb' %}" class="header-link">Submit</a>
     <a href="{% url 'explorer' %}" class="header-link">List Transaction</a>
-    <a href="{% url 'generated' %}" class="header-link">Generated</a>
-    
+    <a href="{% url 'generated' %}" class="header-link">Namespace ID</a>
   </div>
 </header>
-
-
-

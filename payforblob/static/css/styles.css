@@ -3,7 +3,7 @@
   justify-content: center;
   border-radius: 01;
   align-items: center;
-  background-color: white;
+  background-color: #7b2bf9;
   margin: 20px auto;
 }
 
@@ -72,7 +72,7 @@ form button[type="submit"] {
   background-color: #7b2bf9;
   background-image: linear-gradient(to top, #e74fec9c(310 7% 18%), #7b2bf9);
   padding: 10px;
-  border: 0px solid #DDDDDD;
+  border: 0px solid #ca2121;
   border-radius: 5px;
 }
 
@@ -216,4 +216,19 @@ header img {
     color: black;
   }
   
+  .result {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+  
+  .result h2 {
+    margin-bottom: 20px;
+  }
+  
+  .result p {
+    margin-bottom: 10px;
+  }
   
