@@ -41,4 +41,4 @@ python manage.py runserver 0.0.0.0:8000
 
 - http://94.131.14.53:8000/submit_pfb/
 
-![Название картинки](https://raw.githubusercontent.com/AlexBesedin/PayForBlob-transactions-V1.0/main/1.PNG?token=GHSAT0AAAAAABZBKN7AZNOXHXKWHO6FZDDIZB5MBWA)
+![Название картинки](https://github.com/AlexBesedin/PayForBlob-transactions-V1.0/blob/de6d738377b172185b5ec20bedcc6bba0e2c483c/1.PNG)
