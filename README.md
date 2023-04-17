@@ -4,8 +4,6 @@
 
 This tool allows you to send a PayForBlob transaction in blockhain Celestia using the UI.
 
-DEMO: 
-http://94.131.14.53:8000/submit_pfb/
 
 ## Preparing for installation:
 ```sh
@@ -39,5 +37,8 @@ python -m pip install -r requirements.txt
 python manage.py runserver 0.0.0.0:8000
 ```
 
-## HOW TO USE ?
+## Try this tools here:
 
+- http://94.131.14.53:8000/submit_pfb/
+
+![Название картинки](https://raw.githubusercontent.com/AlexBesedin/PayForBlob-transactions-V1.0/main/1.PNG?token=GHSAT0AAAAAABZBKN7AZNOXHXKWHO6FZDDIZB5MBWA)
