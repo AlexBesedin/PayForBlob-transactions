@@ -39,6 +39,6 @@ python manage.py runserver 0.0.0.0:8000
 
 ## Try this tools here:
 
-- http://94.131.14.53:8000/submit_pfb/
+DEMO: http://94.131.14.53:8000/submit_pfb/
 
 ![Название картинки](https://github.com/AlexBesedin/PayForBlob-transactions-V1.0/blob/de6d738377b172185b5ec20bedcc6bba0e2c483c/1.PNG)
