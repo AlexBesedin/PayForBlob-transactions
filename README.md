@@ -2,7 +2,7 @@
 
 ## About the project:
 
-You can try to send a PayForBlob transaction in blockhain Celestia using the UI.
+You can try to send a PayForBlob transaction in blockсhain Celestia using the UI.
 
 
 ## Preparing for installation:
