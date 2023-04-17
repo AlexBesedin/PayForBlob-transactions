@@ -20,7 +20,6 @@ def submit_transaction(request):
             data = form.cleaned_data['data']
             gas_limit = form.cleaned_data['gas_limit']
             fee = form.cleaned_data['fee']
-
             # Отправляем POST запрос
             post_data = {
                 "namespace_id": namespace_id,
@@ -30,13 +29,11 @@ def submit_transaction(request):
             }
             response = requests.post('http://localhost:26659/submit_pfb', data=json.dumps(post_data))
             response_dict = json.loads(response.text)
-
             # Сохраняем транзакцию в базе данных
             transaction = form.save(commit=False)
             transaction.height = response_dict.get('height')
             transaction.txhash = response_dict.get('txhash')
             transaction.save()
-
             # Перенаправляем пользователя на страницу со списком транзакций
             return redirect('explorer')  # Изменено перенаправление на именованный URL 'explorer'
     else:

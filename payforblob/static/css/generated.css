@@ -3,13 +3,17 @@
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-  max-width: 10px;
+  width: 140px; /* ширина кнопки + padding */
+  height: 60px; /* высота кнопки + padding */
   text-align: center;
+  background-color: #7b2bf9; /* цвет кнопки */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* тень */
+  border-radius: 25px; /* закругление углов */
 }
 
 .button {
-  background-color: #7b2bf9; /* Green */
-  border: none; /* убираем границу */
+  background-color: #7b2bf9;
+  border: none;
   color: rgb(235, 33, 33);
   padding: 15px 12px;
   text-align: center;
@@ -18,7 +22,7 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 25px; /* можно убрать, если не нужно закругление углов */
+  border-radius: 25px;
 }
 
 .result {
