@@ -50,10 +50,12 @@ git clone git@github.com:AlexBesedin/PayForBlob-transactions.git
 ```
 ## Create a file containing virtual environment variables (.env):
 
+```sh
 cd PayForBlob-transactions
 touch .env
+```
 
-## Generate Django Secret Key: https://djecrety.ir/
+## Generate Django Secret Key here: https://djecrety.ir/
 
 ```sh
 SECRET_KEY=django-insecure-5ku@(daskjdasdjndhbasdbkajns(
