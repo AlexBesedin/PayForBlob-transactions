@@ -58,7 +58,7 @@ touch .env
 ## Generate Django Secret Key here: https://djecrety.ir/
 
 ```sh
-SECRET_KEY=django-insecure-5ku@(daskjdasdjndhbasdbkajns(
+SECRET_KEY=#el+4fri51pvz%=5h1cc!e($jca^y9e@fh(%rx$tl%u&^u7sv=
 ```
 
 ## Run the application in containers :
